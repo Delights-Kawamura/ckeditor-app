@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CKEditor App</title>
+  <meta http-equiv="Content-Security-Policy"
+        content="
+          default-src 'self';
+          script-src 'self' https://cdn.ckeditor.com https://unpkg.com;
+          style-src 'self';
+          font-src 'self';
+          connect-src 'self';
+          img-src 'self' data:;
+          frame-src 'self';
+        ">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+  <script src="https://unpkg.com/@contentful/app-sdk"></script>
+</head>
+<body>
+  <h2>CKEditor for Contentful</h2>
+  <div id="editor">Hello, CKEditor!</div>
+  <script src="script.js"></script>
+</body>
+</html>
